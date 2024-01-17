@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sustainable Living Hub</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <h1>Sustainable Living Hub</h1>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact Us</a>
+    <!-- Add more navigation links as needed -->
+</nav>
+
+<section id="morningWalk">
+    <h2>Morning Walk Alarms</h2>
+    <form>
+        <label for="morningWalkTime">Set your morning walk alarm:</label>
+        <input type="time" id="morningWalkTime" required>
+        <button type="button" onclick="setMorningWalkAlarm()">Set Alarm</button>
+    </form>
+</section>
+
+<section id="vaccinationSchedules">
+    <h2>Vaccination Schedules</h2>
+    <p>Enter your child's birthdate to get personalized vaccination schedules:</p>
+    <form>
+        <label for="childBirthdate">Child's Birthdate:</label>
+        <input type="date" id="childBirthdate" required>
+        <button type="button" onclick="getVaccinationSchedule()">Get Schedule</button>
+    </form>
+</section>
+
+<section id="foodTracker">
+    <h2>Food Consumption Tracker</h2>
+    <form>
+        <label for="foodInput">Enter the food you consumed:</label>
+        <input type="text" id="foodInput" required>
+        <button type="button" onclick="updateFoodConsumption()">Update</button>
+    </form>
+</section>
+
+
+<section id="foodCalorie">
+    <h2>Food Calorie Calculator</h2>
+    <input type="file" accept="image/*" id="imageInput" onchange="processImage()">
+    <img id="foodImage" alt="Food Image" style="max-width: 30%; display: none;">
+
+    <h3>Calorie Intake:</h3>
+    <p id="calorieResult">Waiting for image processing...</p>
+</section>
+
+
+
+<section id="healthSymptoms">
+    <h2>Health Symptoms Checker</h2>
+    <p>Enter your symptoms below, and we'll provide suggestions for measures and vaccinations:</p>
+    <form>
+        <label for="symptomsInput">Enter your symptoms:</label>
+        <textarea id="symptomsInput" rows="4" required></textarea>
+        <button type="button" onclick="checkSymptoms()">Check Symptoms</button>
+    </form>
+    <div id="symptomsResult">
+        <!-- Suggestions and doctor connection information will be displayed here -->
+    </div>
+</section>
+
+
+<!-- Community Engagement for Organic Farming Section -->
+<section id="communityEngagement">
+    <h2>Community Engagement for Organic Farming</h2>
+    <p>Connect with others to promote organic farming:</p>
+    <!-- Placeholder for community engagement content -->
+    <p>Share your experiences, tips, and questions related to organic farming in our community section.</p>
+    <button type="button"><a href="b.html" target="_blank">Connect</a></button>
+    <!-- You can add more content or features related to community engagement here -->
+    <img src="img.jpg" alt="Community Engagement Image">
+</section>
+
+
+
+
+
+
+
+<header>
+    <h1>Health Awareness Sessions</h1>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#sessions">Sessions</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<section id="home">
+    <h2>Welcome to Health Awareness Sessions</h2>
+    <p>Empowering individuals through knowledge for a healthier life.</p>
+</section>
+
+<section id="sessions">
+    <h2>Upcoming Sessions</h2>
+    <div class="session">
+        <h3>Session Title 1</h3>
+        <p>Date: January 25, 2024</p>
+        <p>Time: 3:00 PM - 5:00 PM</p>
+        <p>Location: Virtual</p>
+    </div>
+    <div class="session">
+        <h3>Session Title 2</h3>
+        <p>Date: February 10, 2024</p>
+        <p>Time: 2:00 PM - 4:00 PM</p>
+        <p>Location: Community Center</p>
+    </div>
+    <!-- Add more session details as needed -->
+</section>
+
+
+<section id="about">
+    <h2>About Us</h2>
+    <p>Our mission is to provide valuable information and resources to promote a healthier lifestyle.</p>
+</section>
+
+<section id="contact">
+    <h2>Contact Us</h2>
+    <form id="contactForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit">Submit</button>
+    </form>
+</section>
+
+
+<div>
+    <footer>
+        <p>&copy; 2024 Health Awareness Sessions. All rights reserved.</p>
+    </footer>
+</div>
+
+
+
+
+
+<!-- JavaScript Code -->
+<script src="scripts.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
